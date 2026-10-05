@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import FormInput from "../../components/Form/FormInput";
 
 function TripSearchSection() {
   const {
@@ -17,57 +18,23 @@ function TripSearchSection() {
         onSubmit={handleSubmit(onSubmit)}
         className="grid w-full grid-cols-1 items-center gap-10 md:grid-cols-4"
       >
-        {/* Destination */}
-        <div>
-          <input
-            type="text"
-            placeholder="Destination..."
-            className="w-full rounded-md bg-light-gray px-4 py-4"
-            {...register("destination", {
-              required: "Destination is required",
-            })}
-          />
+        {/* Destination - Mandatory */}
+        <FormInput
+          type="text"
+          placeholder="Destination..."
+          name="destination"
+          register={register}
+          validation={{
+            required: "Destination is required",
+          }}
+          error={errors.destination}
+        />
 
-          {errors.destination && (
-            <p className="mt-1 text-sm text-red-500">
-              {errors.destination.message}
-            </p>
-          )}
-        </div>
+        {/* Start Date - Optional */}
+        <FormInput type="date" name="startDate" register={register} />
 
-        {/* Start Date */}
-        <div>
-          <input
-            type="date"
-            className="w-full rounded-md bg-light-gray px-4 py-4"
-            {...register("startDate", {
-              required: "Start date is required",
-            })}
-          />
-
-          {errors.startDate && (
-            <p className="mt-1 text-sm text-red-500">
-              {errors.startDate.message}
-            </p>
-          )}
-        </div>
-
-        {/* End Date */}
-        <div>
-          <input
-            type="date"
-            className="w-full rounded-md bg-light-gray px-4 py-4"
-            {...register("endDate", {
-              required: "End date is required",
-            })}
-          />
-
-          {errors.endDate && (
-            <p className="mt-1 text-sm text-red-500">
-              {errors.endDate.message}
-            </p>
-          )}
-        </div>
+        {/* End Date - Optional */}
+        <FormInput type="date" name="endDate" register={register} />
 
         {/* Search */}
         <button
