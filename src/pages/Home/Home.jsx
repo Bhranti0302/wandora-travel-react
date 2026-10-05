@@ -1,5 +1,13 @@
+import BannerSection from "./BannerSection";
+import TripSearchSection from  "./TripSearchSection"
+
 function Home() {
-    return <h1>Home Page</h1>
-};
+  return (
+    <>
+      <BannerSection />
+      <TripSearchSection/>
+    </>
+  );
+}
 
 export default Home;
