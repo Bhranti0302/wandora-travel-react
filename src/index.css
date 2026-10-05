@@ -1,1 +1,103 @@
 @import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  /* Fonts */
+  --font-primary: "Inter", sans-serif;
+  --font-code: "Source Code Pro", monospace;
+
+  /* Colors */
+  --color-primary: #ff8d28;
+  --color-primary-dark: #984f0f;
+  --color-secondary: #805f46;
+  --color-gray: #a8a8a8;
+  --color-light-gray: #d9d9d9;
+  --color-secondary-black: #0f0f0f;
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+/* Global Styles */
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-secondary-black);
+  background-color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+/* Font Classes */
+
+.font-code {
+  font-family: var(--font-code);
+}
+
+/* Text Color Classes */
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-primary-dark {
+  color: var(--color-primary-dark);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.color-gray {
+  color: var(--color-gray);
+}
+
+.color-light-gray {
+  color: var(--color-light-gray);
+}
+
+.color-secondary-black {
+  color: var(--color-secondary-black);
+}
+
+.color-black {
+  color: var(--color-black);
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+/* Background Color Classes */
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-gray {
+  background-color: var(--color-gray);
+}
+
+.bg-light-gray {
+  background-color: var(--color-light-gray);
+}
+
+.bg-secondary-black {
+  background-color: var(--color-secondary-black);
+}
+
+.bg-black {
+  background-color: var(--color-black);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
