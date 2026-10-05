@@ -9,6 +9,7 @@ import MenuIcon from "../../assets/icons/menu.svg";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const location = useLocation();
 
   // Check if the current route is the home page
@@ -24,7 +25,9 @@ function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 w-full transition-colors duration-300 ${
+      className={`${
+        isHome ? "absolute" : "sticky"
+      } top-0 left-0 z-50 w-full transition-colors duration-300 ${
         isHome ? "bg-transparent" : "bg-gray-800"
       }`}
     >
