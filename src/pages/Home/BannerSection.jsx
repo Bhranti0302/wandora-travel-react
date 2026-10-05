@@ -23,7 +23,7 @@ function BannerSection() {
 
         <Link
           to="/destinations"
-          className="rounded bg-secondary px-6 py-2 text-xl font-semibold text-white transition-colors duration-300 hover:bg-primary lg:text-2xl"
+          className="rounded bg-secondary px-6 py-2 text-xl font-semibold text-white transition-colors duration-300 hover:bg-[var(--color-primary)] lg:text-2xl"
         >
           Explore
         </Link>
