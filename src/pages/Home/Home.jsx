@@ -1,11 +1,15 @@
 import BannerSection from "./BannerSection";
-import TripSearchSection from  "./TripSearchSection"
+import TripSearchSection from "./TripSearchSection";
+import TravelInspiration from "./TravelInspiration";
+import WhyChooseUs from "./WhyChooseUs";
 
 function Home() {
   return (
     <>
       <BannerSection />
-      <TripSearchSection/>
+      <TripSearchSection />
+      <TravelInspiration />
+      <WhyChooseUs/>
     </>
   );
 }
