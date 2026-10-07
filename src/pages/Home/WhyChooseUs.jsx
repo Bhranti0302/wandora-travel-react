@@ -52,7 +52,7 @@ function WhyChooseUs() {
           {benefits.map((item) => (
             <div
               key={item.id}
-              className="rounded-md border border-gray-300/60 bg-black/20 px-6 py-5 backdrop-blur-sm transition hover:bg-black/30"
+              className="rounded-lg border border-gray-300/60 bg-black/20 px-6 py-5 backdrop-blur-sm transition hover:bg-black/30"
             >
               <h3 className="text-xl font-semibold text-white">{item.title}</h3>
 
